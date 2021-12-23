@@ -28,8 +28,9 @@ if(isset($_POST['username'])) {
     </head>
     <body>
         <?php if($_SESSION['username']): ?>
-            <p>You are logged in as <?=$_SESSION['username']?></p>
-            <p><a href="?logout=1">Logout</a></p>
+            <button class="login100-form-btn" onclick="document.location='main.php'">
+							Let's Go
+						</button>
         <?php endif; ?>
         <form name="login" action="" method="post">
             Username:  <input type="text" name="username" value="" /><br />
